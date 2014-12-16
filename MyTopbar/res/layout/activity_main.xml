@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/me.jp.mytopbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <me.jp.mytopbar.view.Topbar
+        android:id="@+id/topbar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:background="#ffffff"
+        custom:buttonMode="bothSide"
+        custom:leftBackground="@drawable/left_btn_topbar_selector"
+        custom:leftHeight="40dp"
+        custom:leftWidth="40dp"
+        custom:rightText="完成"
+        custom:rightTextColor="@android:color/black"
+        custom:title="Title1"
+        custom:titleTextColor="@android:color/black"
+        custom:titleTextSize="16sp" />
+
+    <me.jp.mytopbar.view.Topbar
+        android:id="@+id/topbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:background="#18B4ED"
+        custom:buttonMode="left"
+        custom:leftHeight="40dp"
+        custom:leftText="返回"
+        custom:leftTextColor="#ffffff"
+        custom:title="Title2"
+        custom:titleTextColor="@android:color/white"
+        custom:titleTextSize="12sp" />
+
+    <me.jp.mytopbar.view.Topbar
+        android:id="@+id/topbar3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:background="#ffffff"
+        custom:buttonMode="bothSide"
+        custom:leftHeight="40dp"
+        custom:leftText="back"
+        custom:leftTextColor="#ff0000"
+        custom:rightBackground="@drawable/right_btn_topbar_selector"
+        custom:rightHeight="40dp"
+        custom:rightMargin="20dp"
+        custom:rightWidth="40dp"
+        custom:title="Title2"
+        custom:titleTextColor="@android:color/holo_blue_dark"
+        custom:titleTextSize="16sp" />
+
+    <me.jp.mytopbar.view.Topbar
+        android:id="@+id/topbar4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        custom:background="#18B4ED"
+        custom:buttonMode="@null"
+        custom:title="Title2"
+        custom:titleTextColor="@android:color/white"
+        custom:titleTextSize="17sp" />
+
+</LinearLayout>
