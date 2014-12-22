@@ -10,10 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:background="#ffffff"
-        custom:buttonMode="bothSide"
+        custom:buttonMode="both"
         custom:leftBackground="@drawable/left_btn_topbar_selector"
         custom:leftHeight="40dp"
+        custom:leftMargin="12dp"
         custom:leftWidth="40dp"
+        custom:rightMargin="12dp"
         custom:rightText="完成"
         custom:rightTextColor="@android:color/black"
         custom:title="Title1"
@@ -38,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         custom:background="#ffffff"
-        custom:buttonMode="bothSide"
+        custom:buttonMode="both"
         custom:leftHeight="40dp"
         custom:leftText="back"
         custom:leftTextColor="#ff0000"
@@ -46,18 +48,14 @@
         custom:rightHeight="40dp"
         custom:rightMargin="20dp"
         custom:rightWidth="40dp"
-        custom:title="Title2"
+        custom:title="Title3"
         custom:titleTextColor="@android:color/holo_blue_dark"
         custom:titleTextSize="16sp" />
 
     <me.jp.mytopbar.view.Topbar
         android:id="@+id/topbar4"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        custom:background="#18B4ED"
-        custom:buttonMode="@null"
-        custom:title="Title2"
-        custom:titleTextColor="@android:color/white"
-        custom:titleTextSize="17sp" />
+        style="@style/TitleBar_right_text"
+        custom:rightText="right"
+        custom:title="Title4" />
 
 </LinearLayout>

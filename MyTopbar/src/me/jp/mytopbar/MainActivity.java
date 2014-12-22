@@ -44,6 +44,7 @@ public class MainActivity extends Activity {
 			}
 		});
 		Topbar topbar3 = (Topbar) findViewById(R.id.topbar3);
+		topbar3.setTitle(R.string.hello_world);
 		topbar3.setOnTopbarLeftClickListener(new Topbar.TopbarLeftClickListener() {
 			@Override
 			public void leftClick() {

@@ -1,20 +1,31 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar" />
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <!-- 自定义TitleBar style -->
+    <style name="TitleBarBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="me.jp.mytopbar:titleTextSize">17sp</item>
+        <item name="me.jp.mytopbar:titleTextColor">@android:color/black</item>
+        <item name="me.jp.mytopbar:background">#18B4ED</item>
     </style>
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="TitleBar_left_icon" parent="@style/TitleBarBase">
+        <item name="me.jp.mytopbar:leftBackground">@drawable/left_btn_topbar_selector</item>
+        <item name="me.jp.mytopbar:leftHeight">40dp</item>
+        <item name="me.jp.mytopbar:leftWidth">40dp</item>
+        <item name="me.jp.mytopbar:leftMargin">12dp</item>
+        <item name="me.jp.mytopbar:buttonMode">left</item>
+    </style>
+
+    <style name="TitleBar_right_text" parent="@style/TitleBarBase">
+        <item name="me.jp.mytopbar:rightTextColor">@drawable/titlebar_right_text_selector</item>
+        <item name="me.jp.mytopbar:rightTextSize">12sp</item>
+        <item name="me.jp.mytopbar:rightMargin">12dp</item>
+        <item name="me.jp.mytopbar:buttonMode">right</item>
     </style>
 
 </resources>

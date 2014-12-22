@@ -21,7 +21,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>bothSide</code></td><td>0</td><td></td></tr>
+<tr><td><code>both</code></td><td>0</td><td></td></tr>
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
@@ -61,13 +61,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int leftText=0x7f01000a;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
          */
         public static final int leftTextColor=0x7f010004;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -124,13 +121,10 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int rightText=0x7f010011;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
          */
         public static final int rightTextColor=0x7f01000b;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
@@ -181,6 +175,9 @@ containing a value of this type.
          */
         public static final int titleTextSize=0x7f010002;
     }
+    public static final class color {
+        public static final int titlebar_background=0x7f050000;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -189,8 +186,8 @@ containing a value of this type.
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -200,39 +197,31 @@ containing a value of this type.
         public static final int right_btn_n=0x7f020004;
         public static final int right_btn_p=0x7f020005;
         public static final int right_btn_topbar_selector=0x7f020006;
+        public static final int titlebar_right_text_selector=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f080007;
-        public static final int bothSide=0x7f080000;
-        public static final int left=0x7f080001;
-        public static final int right=0x7f080002;
-        public static final int topbar1=0x7f080003;
-        public static final int topbar2=0x7f080004;
-        public static final int topbar3=0x7f080005;
-        public static final int topbar4=0x7f080006;
+        public static final int action_settings=0x7f040007;
+        public static final int both=0x7f040000;
+        public static final int left=0x7f040001;
+        public static final int right=0x7f040002;
+        public static final int topbar1=0x7f040003;
+        public static final int topbar2=0x7f040004;
+        public static final int topbar3=0x7f040005;
+        public static final int topbar4=0x7f040006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int action_settings=0x7f070002;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070001;
     }
     public static final class style {
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -244,11 +233,13 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
+        public static final int AppBaseTheme=0x7f080000;
+        public static final int AppTheme=0x7f080001;
+        /**  自定义TitleBar style 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int TitleBarBase=0x7f080002;
+        public static final int TitleBar_left_icon=0x7f080003;
+        public static final int TitleBar_right_text=0x7f080004;
     }
     public static final class styleable {
         /** Attributes that can be used with a Topbar.
@@ -327,7 +318,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <colgroup align="left" />
 <colgroup align="left" />
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>bothSide</code></td><td>0</td><td></td></tr>
+<tr><td><code>both</code></td><td>0</td><td></td></tr>
 <tr><td><code>left</code></td><td>1</td><td></td></tr>
 <tr><td><code>right</code></td><td>2</td><td></td></tr>
 </table>
@@ -397,13 +388,10 @@ containing a value of this type.
           attribute's value can be found in the {@link #Topbar} array.
 
 
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
           @attr name me.jp.mytopbar:leftTextColor
         */
         public static final int Topbar_leftTextColor = 4;
@@ -502,13 +490,10 @@ containing a value of this type.
           attribute's value can be found in the {@link #Topbar} array.
 
 
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
           @attr name me.jp.mytopbar:rightTextColor
         */
         public static final int Topbar_rightTextColor = 11;
