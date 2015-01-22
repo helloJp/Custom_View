@@ -5,7 +5,7 @@
 #2、SlidingMenu<br>
 #3、imooc_weixin_6_0<br>
 代码来自：http://blog.csdn.net/lmj623565791/article/details/41087219<br>
-设置Paint的Xfermode为：Mode.DST_IN。通过Canvas绘图
+设置Paint的Xfermode为：Mode.DST_IN。通过Canvas绘图<br>
 ![](https://github.com/HubDroid/Custom_View/blob/master/art%2Fimooc_weixin6_0_pic1.gif)
 
 
